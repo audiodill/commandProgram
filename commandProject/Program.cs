@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using commandProject.Class;
 
 namespace commandProject
 {
@@ -78,27 +79,15 @@ namespace commandProject
                 Random r = new Random();
                 for (int i = 0; i < dice.Length; i++)
                 {
-                    
                     dice[i] = r.Next(1, 7);
-                    Console.WriteLine("           Die " + (i + 1) + ": " + dice[i]);
-                    
+                    Console.WriteLine("                           Die " + (i + 1) + ": " + dice[i]);
                 }
-                Console.ReadLine();
-                //Random dice1 = new Random();
-                //int diceOne = dice1.Next(1, 7);
-                //Random dice2 = new Random();
-                //int diceTwo = dice2.Next(1, 7);
-                //Random dice3 = new Random();
-                //int diceThree = dice3.Next(1, 7);
-                //Random dice4 = new Random();
-                //int diceFour = dice4.Next(1, 7);
-                //Random dice5 = new Random();
-                //int diceFive = dice5.Next(1, 7);
-
-                //Console.WriteLine("Dice 1: " + diceOne);
-                //Console.WriteLine("Dice 2: " + diceTwo);
-                //Console.WriteLine("Which dice would you like to keep? (Please use spaces)");
-                //Console.ReadLine();
+                Console.WriteLine("Which dice would you like to keep? (Use spaces please)");
+                string numbers = Console.ReadLine();
+                string[] nums = numbers.Split(' ');
+                
+                //if then statement to get which nums to roll again
+                
 
             }
         }
