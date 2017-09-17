@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static commandProject.Class.Card;
 
 namespace commandProject.Class
 {
     public class Player
     {
         private string name;
-        private int currentLocation;
         private int order;
-        private bool isSkipped;
         private bool isWinner;
 
         public string Name
@@ -22,8 +21,12 @@ namespace commandProject.Class
 
         public int CurrentLocation
         {
-            get { return currentLocation; }
+            { get; set; }
         }
+
+        public int Order { get; set; }
+        public bool IsSkipped { get; set; }
+        public bool IsWinner { get; set; }
 
 
     }

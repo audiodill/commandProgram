@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace commandProject.Class
 {
-    class Card
+    public class Card
     {
+        public enum CandyColor
+        {
+            Red,
+            Orange,
+            Yellow,
+            Green,
+            Blue,
+            Purple,
+            Cupcake,
+            Star,
+            IceCream,
+            Gingerbread,
+            Chocolate,
+            Lollipop,
+            IcePop,
+            Rainbow
+        }
+        public CandyColor Color { get; set; }
+        public int Amount { get; set; }
     }
 }
