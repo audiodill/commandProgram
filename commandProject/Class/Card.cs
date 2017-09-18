@@ -9,6 +9,7 @@ namespace commandProject.Class
 {
     public class Card
     {
+
         
         public enum CandyColor
         {
@@ -33,5 +34,25 @@ namespace commandProject.Class
         public CandyColor Color { get; set; }
         public int Amount { get; set; }
         
+        public bool IsStandard()
+        {
+            return Color == CandyColor.Red
+                || Color == CandyColor.Blue
+                || Color == CandyColor.Orange
+                || Color == CandyColor.Yellow
+                || Color == CandyColor.Green
+                || Color == CandyColor.Purple;
+        }
+
+        public bool IsSpecialty()
+        {
+            return Color == CandyColor.Cupcake
+                || Color == CandyColor.IcePop
+                || Color == CandyColor.Chocolate
+                || Color == CandyColor.IceCream
+                || Color == CandyColor.Gingerbread
+                || Color == CandyColor.Star
+                || Color == CandyColor.Lollipop;
+        }
     }
 }
