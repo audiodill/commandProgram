@@ -45,6 +45,8 @@
     <Compile Include="Class\Board.cs" />
     <Compile Include="Class\BoardSpace.cs" />
     <Compile Include="Class\Card.cs" />
+    <Compile Include="Class\CardDeck.cs" />
+    <Compile Include="Class\Extensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Class\Player.cs" />

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using commandProject.Class;
 
 namespace commandProject.Class
 {
     public class Card
     {
+        
         public enum CandyColor
         {
             Red,
@@ -25,7 +27,11 @@ namespace commandProject.Class
             IcePop,
             Rainbow
         }
+
+       
+
         public CandyColor Color { get; set; }
         public int Amount { get; set; }
+        
     }
 }
