@@ -9,7 +9,6 @@ namespace commandProject.Class
 {
     public class BoardSpace
     {
-        private int location;
         
         public CandyColor Color { get; set; }
         public int Position { get; set; }
